@@ -1,0 +1,30 @@
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bulge {
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.indicator {
+  text-align: center;
+  animation: 2s bulge infinite ease-out;
+}
+  .indicator > span {
+    opacity: 0.2;
+    letter-spacing: -4px;
+  }
+    .indicator > span:nth-of-type(3) {
+      animation: 1s blink infinite 0.9999s;
+      padding-right: 4px;
+    }
+    .indicator > span:nth-of-type(2) {
+      animation: 1s blink infinite 0.6666s;
+    }
+    .indicator > span:nth-of-type(1) {
+      animation: 1s blink infinite 0.3333s;
+    }
