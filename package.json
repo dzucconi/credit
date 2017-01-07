@@ -1,11 +1,11 @@
 {
-  "name": "hell",
+  "name": "awareness-acceptance-action-model",
   "description": "",
   "author": "Damon Zucconi",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dzucconi/hell"
+    "url": "https://github.com/dzucconi/awareness-acceptance-action-model"
   },
   "scripts": {
     "test": "mocha test",
