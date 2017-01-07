@@ -1,9 +1,14 @@
 import * as errors from './errors';
 
-export default (x, entropy) =>
-  x.split('').map(x => {
-    if (errors.probability(entropy)) x = errors.transposition(x);
-    if (errors.probability(entropy)) x = errors.caps(x);
+export default (sentence, entropy) => {
+  const letters = sentence.split('');
 
-    return x;
+  return letters.map(letter => {
+    if (errors.probability(entropy)) letter = errors.transposition(letter);
+    if (errors.probability(entropy)) letter = errors.caps(letter);
+    if (errors.probability(entropy)) letter = errors.omit(letter);
+    if (errors.probability(entropy)) letter = errors.double(letter);
+
+    return letter;
   }).join('');
+};
