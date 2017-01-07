@@ -12,7 +12,6 @@ export default class Thanker {
       'ok, but thanks',
       'thank ye',
       'no no thank you',
-      'a huge thank you',
       'thanks again',
     ];
   }
