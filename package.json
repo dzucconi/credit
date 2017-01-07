@@ -1,11 +1,11 @@
 {
-  "name": "awareness-acceptance-action-model",
+  "name": "debt",
   "description": "",
   "author": "Damon Zucconi",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dzucconi/awareness-acceptance-action-model"
+    "url": "https://github.com/dzucconi/debt"
   },
   "scripts": {
     "test": "mocha test",
