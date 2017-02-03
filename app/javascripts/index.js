@@ -1,7 +1,7 @@
 import parameters from 'queryparams';
 import times from './lib/times';
 import Chat from './models/chat';
-import Thanker from './models/thanker';
+import Greeter from './models/greeter';
 
 window.parameters = parameters;
 
@@ -11,7 +11,7 @@ export default () => {
     pause: 1000,
     mute: false,
     invert: false,
-    entropy: 0.033,
+    entropy: 0.0165,
   });
 
   document.body.setAttribute('data-invert', invert);
@@ -20,7 +20,7 @@ export default () => {
     container: document.getElementById('container'),
   };
 
-  const them = new Thanker;
+  const them = new Greeter;
   const me = them;
 
   const chats = times(amount)
