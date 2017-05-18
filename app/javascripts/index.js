@@ -7,7 +7,7 @@ window.parameters = parameters;
 
 export default () => {
   const { amount, pause, mute, invert, entropy } = parameters({
-    amount: 1,
+    amount: Math.floor(window.innerWidth / 320) || 1,
     pause: 1000,
     mute: false,
     invert: false,
